@@ -12,7 +12,6 @@ import java.util.List;
 @Service
 public class UserServiceImp implements UserService {
 
-    @Autowired
     private UserDao userDao;
 
     @Autowired
@@ -37,6 +36,7 @@ public class UserServiceImp implements UserService {
       userDao.deleteAllUsers();
    }*/
 
+    @Transactional(readOnly = true)
     @Override
     public User findUserByMS(String model, int series) {
         return userDao.findUserByMS(model, series);
