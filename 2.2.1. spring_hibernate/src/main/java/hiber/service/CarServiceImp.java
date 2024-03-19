@@ -14,7 +14,7 @@ public class CarServiceImp implements CarService {
     private CarDao carDao;
 
     @Autowired
-    public void setSessionFactory(CarDao carDao) {
+    public void setCarDao(CarDao carDao) {
         this.carDao = carDao;
     }
 
