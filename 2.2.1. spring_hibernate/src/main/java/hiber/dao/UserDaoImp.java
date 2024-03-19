@@ -32,14 +32,6 @@ public class UserDaoImp implements UserDao {
         return query.getResultList();
     }
 
-   /*@Override
-   public void deleteAllUsers() {
-      List<User> users = listUsers();
-      for (User user : users) {
-         sessionFactory.getCurrentSession().delete(user);
-      }
-   }*/
-
     @Override
     public User findUserByMS(String model, int series) {
         String hql = "from User user where user.car.model = :model and user.car.series = :series";
