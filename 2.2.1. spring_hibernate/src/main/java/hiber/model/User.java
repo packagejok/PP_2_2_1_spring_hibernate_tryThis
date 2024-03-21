@@ -33,18 +33,18 @@ public class User {
         this.car = car;
     }
 
+    public User(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
+
     public void setCar(Car car) {
         this.car = car;
     }
 
     public Car getCar() {
         return car;
-    }
-
-    public User(String firstName, String lastName, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
     }
 
     public Long getId() {
